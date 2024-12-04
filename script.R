@@ -106,7 +106,7 @@ acf(residuals(modelo), main = "ACF dos Resíduos")
 #pois nenhuma linha ultrapassou a linha pontilhada azul. Entretanto, para análise
 #ser ainda mais robusta, também foi utilizado o teste de Durbin-Watson:
 
-library(car)
+library(lmtest)
 dwtest(modelo)
 
 #As hipóteses: 
@@ -222,6 +222,7 @@ acf(residuals(Lm3), main = "ACF dos Resíduos")
 #pois nenhuma linha ultrapassou a linha pontilhada azul. Entretanto, para análise
 #ser ainda mais robusta, também foi utilizado o teste de Durbin-Watson:
 
+library(lmtest)
 dwtest(Lm3)
 
 #As hipóteses: 
